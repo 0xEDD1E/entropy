@@ -51,13 +51,14 @@ int main(int argc, char *argv[])
 	}
 	
 	//FOR DEBUGGING PURPOSES// 
-	//for (i = 0; i < vals; i++) {
-	//	printf("%s %f\n", values[i].var, values[i].prob);
-	//}
+	// for (i = 0; i < vals; i++) {
+		// printf("%s %f\n", values[i].var, values[i].prob);
+	// }
 	//FOR DEBUGGING PURPOSES//
 	
 	// print the result
-	printf("entropy is %f\n", entropy(values, vals));
+	float H = entropy(values, vals);
+	printf("entropy is %f\n", H);
 		
 }
 
