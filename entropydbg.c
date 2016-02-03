@@ -51,9 +51,9 @@ int main(int argc, char *argv[])
 	}
 	
 	//FOR DEBUGGING PURPOSES// 
-	// for (i = 0; i < vals; i++) {
-		// printf("%s %f\n", values[i].var, values[i].prob);
-	// }
+	for (i = 0; i < vals; i++) {
+		printf("%s %f\n", values[i].var, values[i].prob);
+	}
 	//FOR DEBUGGING PURPOSES//
 	
 	// print the result
@@ -79,7 +79,7 @@ void onerror(const char *errs, const int eno)
 float entropy(VALUES values[], int len)
 {
 	short i; // counter
-	float entropy = 0.0; // entropy of the values array
+	float entropy; // entropy of the values array
 	float infocont(float); // information-content I(x) function
 	
 	// calculate entropy
